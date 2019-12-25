@@ -11,8 +11,8 @@ class CardFront extends React.Component {
       <div className='card-front base'>
         <SkyView backgroundColor={'magenta'} size={'25px'} how={250} />
         <div
-          style={this.props.extraStyle}
           className='flip-button-front'
+          style={this.props.extraStyle}
           onClick={this.props.buttonClick}
         ></div>
       </div>

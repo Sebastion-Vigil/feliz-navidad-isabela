@@ -6,10 +6,10 @@ import '../css/CardBase.css'
 class CardBack extends React.Component {
   render () {
     return (
-      <div className='card-back base'>
+      <div className='card-back base' style={this.props.imgStyle}>
         <div
-          style={this.props.extraStyle}
           className='flip-button-back'
+          style={this.props.extraStyle}
           onClick={this.props.buttonClick}
         ></div>
       </div>
