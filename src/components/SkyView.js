@@ -18,13 +18,13 @@ class SkyView extends React.Component {
             1: gift,
             2: hohoho,
             3: reindeer,
-            5: santaClause,
-            6: santaTravelling
+            4: santaClause,
+            5: santaTravelling
           }}
-          how={50}
+          how={this.props.how}
           time={20}
-          size={"75px"}
-          background={"indigo"}
+          size={this.props.size}
+          background={this.props.backgroundColor}
         />
         )
     }

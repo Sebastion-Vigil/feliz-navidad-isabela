@@ -23,15 +23,21 @@ class FlipCard extends React.Component {
 
   render () {
     return (
-        <ReactCardFlip
-          isFlipped={this.state.isFlipped}
-          flipDirection='horizontal'
-        >
-          <CardFront buttonClick={this.handleClick} />
-          <CardBack buttonClick={this.handleClick} />
-        </ReactCardFlip>
+      <ReactCardFlip
+        isFlipped={this.state.isFlipped}
+        flipDirection='horizontal'
+      >
+        <CardFront
+          extraStyle={this.props.frontStyle}
+          buttonClick={this.handleClick}
+        />
+        <CardBack
+          extraStyle={this.props.backStyle}
+          buttonClick={this.handleClick}
+        />
+      </ReactCardFlip>
     )
   }
 }
 
-export default FlipCard;
+export default FlipCard

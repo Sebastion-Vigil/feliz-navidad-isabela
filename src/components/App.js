@@ -11,10 +11,21 @@ class App extends React.Component {
   render () {
     return (
       <div className='app'>
-        <SkyView />
-        <FlipCard />
-        <FlipCard />
-        <FlipCard />
+        <SkyView 
+          backgroundColor={"indigo"}
+          size={"75px"}
+          how={50}
+        />
+        {/* pass frontStyle and backStyle props */}
+        <FlipCard backStyle={{
+          
+        }}/>
+        <FlipCard backStyle={{
+          
+        }}/>
+        <FlipCard backStyle={{
+          
+        }}/>
       </div>
     )
   }
