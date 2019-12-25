@@ -7,10 +7,7 @@ class CardFront extends React.Component {
   render () {
     return (
       <div className='card-front base'>
-        <p>Front</p>
-        <div className='flip-button' onClick={this.props.buttonClick}>
-          Click
-        </div>
+        <div className='flip-button' onClick={this.props.buttonClick}></div>
       </div>
     )
   }
