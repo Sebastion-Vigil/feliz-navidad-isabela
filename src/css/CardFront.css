@@ -1,3 +1,8 @@
+.card-front {
+    border: 5px solid gold;
+    border-radius: 5px;
+}
+
 .flip-button-front {
     width: 100px;
     height: 100px;
@@ -7,4 +12,11 @@
     justify-content: center;
     align-items: center;
     background-image: url('../images/reindeerNoble.svg');
+    background-size: 100% 100%;
 }
+
+.flip-button-front:active {
+    border: 3px solid green;
+    opacity: .75;
+}
+
